@@ -13,3 +13,4 @@ curriculum. Each directory holds one project with its own README.
 - `python-exceptions` - try/except/finally, raising exceptions
 - `python-classes` - classes, instances, private attributes, properties
 - `python-more_classes` - __str__/__repr__/__del__, class attributes, static and class methods
+- `python-everything_is_object` - identity, references, mutable vs immutable

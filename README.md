@@ -15,3 +15,4 @@ curriculum. Each directory holds one project with its own README.
 - `python-more_classes` - __str__/__repr__/__del__, class attributes, static and class methods
 - `python-everything_is_object` - identity, references, mutable vs immutable
 - `python-inheritance` - subclasses, isinstance/issubclass, super, doctests
+- `python-input_output` - files, with statement, JSON serialization

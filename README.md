@@ -7,3 +7,4 @@ curriculum. Each directory holds one project with its own README.
 
 - `python-hello_world` - running Python, `print`, f-strings, string slicing
 - `python-if_else_loops_functions` - conditionals, loops, `range`, functions
+- `python-import_modules` - imports, modules, `__main__` guard, `sys.argv`

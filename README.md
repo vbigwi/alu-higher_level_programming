@@ -12,3 +12,4 @@ curriculum. Each directory holds one project with its own README.
 - `python-more_data_structures` - sets, dictionaries, lambda/map/filter/reduce
 - `python-exceptions` - try/except/finally, raising exceptions
 - `python-classes` - classes, instances, private attributes, properties
+- `python-more_classes` - __str__/__repr__/__del__, class attributes, static and class methods

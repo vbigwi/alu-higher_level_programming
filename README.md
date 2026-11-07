@@ -9,3 +9,4 @@ curriculum. Each directory holds one project with its own README.
 - `python-if_else_loops_functions` - conditionals, loops, `range`, functions
 - `python-import_modules` - imports, modules, `__main__` guard, `sys.argv`
 - `python-data_structures` - lists, tuples, slicing, comprehensions
+- `python-more_data_structures` - sets, dictionaries, lambda/map/filter/reduce

@@ -16,3 +16,4 @@ curriculum. Each directory holds one project with its own README.
 - `python-everything_is_object` - identity, references, mutable vs immutable
 - `python-inheritance` - subclasses, isinstance/issubclass, super, doctests
 - `python-input_output` - files, with statement, JSON serialization
+- `SQL_introduction` - MySQL databases, tables, CRUD, aggregates

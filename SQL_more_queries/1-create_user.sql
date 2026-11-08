@@ -1,5 +1,7 @@
 -- Creates the user user_0d_1 with all privileges of a MySQL 8.0.25 server
 CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
+-- Makes sure the password is set even if the user already existed
+ALTER USER 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
 -- Starts from a clean privilege set so the grants are the same on every run
 REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'user_0d_1'@'localhost';
 -- Gives every static privilege

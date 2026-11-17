@@ -73,6 +73,18 @@ class TestSquareValidation(unittest.TestCase):
             Square(1, 0, -1)
         self.assertEqual(str(error.exception), "y must be >= 0")
 
+    def test_y_type(self):
+        """y must be an integer."""
+        with self.assertRaises(TypeError) as error:
+            Square(1, 2, "3")
+        self.assertEqual(str(error.exception), "y must be an integer")
+
+    def test_x_value(self):
+        """x must be 0 or more."""
+        with self.assertRaises(ValueError) as error:
+            Square(1, -2)
+        self.assertEqual(str(error.exception), "x must be >= 0")
+
     def test_size_setter(self):
         """The size setter updates width and height together."""
         s = Square(5)
@@ -154,6 +166,28 @@ class TestSquareUpdate(unittest.TestCase):
         s = Square(5, 0, 0, 1)
         s.update(2, 3, 4, 5, 6)
         self.assertEqual(str(s), "[Square] (2) 4/5 - 3")
+
+
+class TestSquareFiles(unittest.TestCase):
+    """Tests the file helpers used from Square."""
+
+    def tearDown(self):
+        """Remove the file created by the tests."""
+        import os
+        if os.path.exists("Square.json"):
+            os.remove("Square.json")
+
+    def test_save_to_file_none(self):
+        """Square.save_to_file(None) writes an empty list."""
+        Square.save_to_file(None)
+        with open("Square.json", "r") as file:
+            self.assertEqual(file.read(), "[]")
+
+    def test_save_to_file_squares(self):
+        """Square.save_to_file writes the dictionaries of the squares."""
+        Square.save_to_file([Square(2, 0, 0, 4)])
+        with open("Square.json", "r") as file:
+            self.assertIn('"size": 2', file.read())
 
 
 class TestSquareToDictionary(unittest.TestCase):

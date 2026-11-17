@@ -1,3 +1,4 @@
 - `python-network_0` - HTTP, URLs and cURL
 - `python-network_1` - urllib, requests, JSON APIs
 - `python-test_driven_development` - doctests, unittest, documentation first
+- `python-almost_a_circle` - Base/Rectangle/Square, args/kwargs, JSON files, unittest

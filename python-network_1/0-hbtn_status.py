@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Fetches https://alu-intranet.hbtn.io/status with urllib and shows the body."""
+"""Fetches the ALU intranet status page with urllib and shows the body."""
 import urllib.request
 
 

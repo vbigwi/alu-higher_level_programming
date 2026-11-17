@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Fetches https://alu-intranet.hbtn.io/status with requests and shows the body."""
+"""Fetches the ALU intranet status page with requests and shows the body."""
 import requests
 
 
